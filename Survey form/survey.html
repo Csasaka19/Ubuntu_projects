@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">INCOGNITTO CC'S SURVEY FORM</h1>
+    <br>
+    <p id="description">Please take your time with the survey.</p>
+    <p>Thank you</p>
+    <br>
+    <form action="" id="survey-form" method="post">
+        <fieldset>
+            <legend>
+                Basic info
+            </legend>
+            <label for="name" id="name-label">
+                Name <input type="text" id="name" placeholder="Enter your full name" required>
+            </label>
+            <label for="email" id="email-label">
+               Email address <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <label for="number" id="number-label">
+               Age <input type="number" id="number" placeholder="Enter your age" min="13" max="100" required>
+            </label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>
+                About
+            </legend>
+            <label for="best">
+                Best gaming experience: 
+                <select name="best" id="dropdown">
+                    <option value="">(Best game you played?)</option>
+                    <option value="1">God of war</option>
+                    <option value="2">Red dead redemption</option>
+                    <option value="3">Assassin's creed</option>
+                    <option value="4">FIFA</option>
+                    <option value="4">Call of duty</option>
+                </select>
+                </label>
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="male"> Male
+            </label>
+            <label for="female">
+                <input type="radio" id="female" name="gender" value="female"> Female
+            </label>
+            <label for="other">
+                <input type="radio" id="other" name="gender" value="other"> Other
+            </label>
+
+            <label for="genre">
+                Select every applicable choice:       
+                <label for="action">
+               Action <input type="checkbox" id="action" value="action">
+                </label>
+                <label for="">
+                  Sports  <input type="checkbox"  id="sports" value="sports">
+                </label>
+                <label for="">
+                   Shooting <input type="checkbox"  id="shooting" value="shooting">
+                </label>
+                <label for="">
+                   Strategy <input type="checkbox"  id="strategy" value="strategy">
+                </label>
+                <label for="">
+                   Mind games <input type="checkbox"  id="mind" value="mind">
+                </label>
+            </label>
+            <textarea name="additional" id="additional" cols="15" rows="2" placeholder="The games are dope but...">
+            </textarea>
+            <label for="notification">
+                <input type="checkbox" id="notification" value="notify"> Receive notification to my email for more info?
+            </label>
+        </fieldset>
+
+        <br>
+
+        <button id="submit" type="submit">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
